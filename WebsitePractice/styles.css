@@ -59,11 +59,3 @@ main{
     scale: 0.98;
     background-color: rgb(88, 229, 254);
 }
-
-/*RESPONSIVE DESIGN*/
-@media (max-width: 992px){
-    .navbar .navbar-list,
-    .navbar .action-btn {
-        display: none;
-    }
-}
