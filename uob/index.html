@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Navbar-->
+        <nav id = "navbar" class = "navbar">
+            <a href = "index.html"><img class = "logo" src = "img/University-of-Birmingham-Logo.png"></a>
+            <ul>
+                <li><a class = "nav-option" href="">Home</a></li>
+                <li><a class = "nav-option"  href="">Modules</a></li>
+                <li><a class = "nav-option"  href="">School</a></li>
+                <li><a class = "nav-option"  href="">Society</a></li>
+            </ul>
+            <div class = "navbar-sidecontent">
+                <a class = "profile-button" href = ""><img src = "img/638636-200.png"></a>
+                <a class = "contact-us" href = "">Contact Us</a>
+            </div>
+        </nav>
+
+        <!--Homepage background-->
+        <div class = "img-container">
+            <p>Welcome to Computer Science</p>
+        </div>
+
+        <!--Section 1 for introduction-->
+        <section class = "section1">
+            <div class = "section1-text">
+                <h1>Discover Computer Science</h1>
+                <p>Open up an exciting world of tech career possibilities. Our Computer Science courses will prepare you for success in our ever-evolving digital world.</p>
+            </div>
+            <div class = "section1-img">
+                <img src = "img/uob-065-cropped-600x309.jpg">
+            </div>
+        </section>
+        
+        <!--Section 2 for our 3 ranking blocks-->
+        <section class = "section2">
+            <div class = "stat-container">
+                <div class = "ranking-text">5<sup>th</sup></div>
+                <p>In the UK for Computer Science.</p>
+            </div>
+            <div class = "stat-container">
+                <div class = "ranking-text">85%</div>
+                <p>Student satisfaction.</p>
+            </div>
+            <div class = "stat-container">
+                <div class = "ranking-text">A<sup>*</sup>AA</div>
+                <p>A-level requirements.</p>
+            </div>
+        </section>
+
+        <!--Divider using SVG element-->
+        <div class="divider1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 892.25 74.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <section class = "section3">
+            <div class = "section3-text">
+                <h1>Cutting edge modules</h1>
+                <p>Stay ahead of the competition with our constantly-updated selection of modules to choose from. Try something new, experiment, and find your passion.</p>
+                <a class = "learn-more" href = "">Learn More</a>
+            </div>
+            <div>
+                <div class = "modules-container">
+                    <div class = "modules-track">
+                        <div class = "slide">
+                            <h1>Programming</h1>
+                            <p>Modules such as <strong>Object-Oriented Programming</strong> or <strong>Full-Stack Development</strong> are a great way to learn coding syntax, conventions, and modern industry standards.</p>
+                        </div>
+                        <div class = "slide">
+                            <h1>Artifical Intelligence</h1>
+                            <p>Lead the way in the world of AI with modules such as <strong>Machine Learning</strong> or <strong>Computer Vision</strong>, and learn how the ever-improving AI systems that we use every day work.</p>
+                        </div>
+                        <div class = "slide">
+                            <h1>System Security</h1>
+                            <p>Learn desirable skills with modules such as <strong>Security Of Real World Systems</strong> or <strong>Systems Security</strong> and discover how we as a society defend against cyber-attacks (or the opposite).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots-container">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+            
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>

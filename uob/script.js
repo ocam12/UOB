@@ -1,0 +1,32 @@
+window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('navbar');
+    if(window.scrollY > 50){
+        navbar.classList.add('scrolled');
+    }
+    else{
+        navbar.classList.remove('scrolled');
+    }
+});
+
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const track = document.querySelector('.modules-track');
+
+function goToSlide(index) {
+    currentSlide = index;
+    track.style.transform = `translateX(-${index * 100/3}%)`;
+    updateDots(index);
+}
+
+const dots = document.querySelectorAll('.dot');
+
+function updateDots(index) {
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
+}
+
+setInterval(() => {
+    goToSlide((currentSlide + 1) % slides.length);
+}, 7500);
