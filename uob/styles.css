@@ -30,7 +30,7 @@ body{
 ul{
     display: flex;
     list-style: none;
-    gap: 60px;
+    gap: 40px;
 }
 
 .logo{
@@ -116,6 +116,10 @@ ul{
     text-align: center;
     font-weight: bolder;
     color: rgb(249, 249, 249);
+    transition: 0.5s ease;
+}
+.img-container p.scrolled{
+    opacity: 0%;
 }
 
 .section1{
@@ -167,6 +171,11 @@ ul{
     justify-content: center;
     gap: 100px;
     font-family: Roboto Condensed;
+}
+
+.stat-link{
+    color: black;
+    text-decoration: none;
 }
 
 .stat-container{
@@ -227,6 +236,7 @@ ul{
     color: rgb(5, 0, 62);
 }
 .section3-text p{
+    max-width: 600px;
     font-size: 18px;
     color: rgb(62, 62, 62);
     margin-bottom: 30px;
@@ -241,7 +251,7 @@ ul{
 }
 
 .modules-container{
-    width: 500px;
+    width: 400px;
     overflow: hidden;
     flex-shrink: 0;
     border-radius: 10px;
@@ -259,17 +269,21 @@ ul{
     width: calc(100%/3);
     flex-shrink: 0;
     height: 200px;
-    background: #e4ffff;
+    background: #e8fdff;
     color: rgb(0, 0, 0);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 40px;
+    transition: 0.5s ease;
+    cursor: pointer;
 }
-.slide p{
-    text-align: center;
-    font-size: 15px;
-    width: 450px;
+.slide h1{
+    font-size: 30px;
+    color: rgb(5, 0, 62);
+}
+.slide img{
+    height: 80px;
 }
 
 .dots-container {
@@ -294,48 +308,28 @@ ul{
 
 
 @media (max-width: 850px) {
-  .section1-text h1{
-    font-size: 20px;
-    }
-    .section1-text p{
-        font-size: 12px;
-    }
-    .section1-img img{
-        height: 55%;
+    .navbar ul{
+        display: none;
     }
 
+    .section1{
+        flex-direction: column;
+        text-align: center;
+        height: 600px;
+        gap: 0px;
+    }
 
     .section2{
         flex-direction: column;
         height: 900px;
         gap: 30px;
     }
+
+    .section3{
+        flex-direction: column;
+        height: 600px;
+    }
 }
 
 @media (max-width: 1000px){
-    .section3{
-        gap: 0px;
-        padding: 25px;
-    }
-    .modules-container{
-        scale: 0.8;
-        margin: 0;
-    }
-    .dots-container{
-        scale: 0.8;
-        margin-top: 10px;
-    }
-    .section3-text h1{
-        font-size: 20px;
-    }
-    .section3-text p{
-        font-size: 12px;
-    }
-    .section3-text a{
-        color: black;
-        padding: 5px;
-        border: 1px solid black;
-        border-radius: 20px;
-        font-size: 12px;
-    }
 }

@@ -1,10 +1,13 @@
 window.addEventListener('scroll', function () {
     const navbar = document.getElementById('navbar');
+    const imgText = this.document.getElementById('imgText');
     if(window.scrollY > 50){
         navbar.classList.add('scrolled');
+        imgText.classList.add('scrolled');
     }
     else{
         navbar.classList.remove('scrolled');
+        imgText.classList.remove('scrolled');
     }
 });
 
