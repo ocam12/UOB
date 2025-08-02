@@ -246,6 +246,15 @@ ul{
     gap: 100px;
 }
 
+.section3-right-side{
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .section3-text h1{
     font-size: 26px;
     color: rgb(255, 255, 255);
@@ -269,7 +278,7 @@ ul{
 }
 
 .modules-container{
-    width: 400px;
+    width: 100%;
     overflow: hidden;
     flex-shrink: 0;
     border-radius: 10px;
@@ -516,6 +525,9 @@ ul{
     .section3{
         flex-direction: column;
         height: 600px;
+    }
+    .section3-right-side{
+        width: 100%;
     }
 
     .section4{
