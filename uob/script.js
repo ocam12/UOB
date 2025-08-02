@@ -48,3 +48,15 @@ setInterval(() => {
   document.querySelectorAll('.slide-in-element').forEach(el => {
     observer.observe(el);
   });
+
+  function openCloseFooter() {
+    const hidden = this.document.getElementById('hidden-text');
+    const arrow = this.document.getElementById('arrow');
+    if(hidden.classList.contains('unhide')){
+      hidden.classList.remove('unhide');
+      arrow.classList.remove('rotated');
+    }else{
+      hidden.classList.add('unhide');
+      arrow.classList.add('rotated');
+    }
+  }

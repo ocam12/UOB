@@ -365,10 +365,8 @@ ul{
     background-color: #100f0f;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     color: #ffffff;
     height: 700px;
-    font-family: Roboto Condensed;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -377,17 +375,105 @@ ul{
     height: 70px;
 }
 
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .address{
     width: 220px;
     line-height: 35px;
     font-weight: lighter;
     font-size: 25px;
+    font-family: Roboto Condensed;
 }
 .tel{
     width: 220px;
     line-height: 35px;
     font-weight: lighter;
     font-size: 20px;
+    font-family: Roboto Condensed;
+}
+
+.icon-container{
+    display: flex;
+    gap: 20px;
+    width: 350px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.right-side{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.global-footprint-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    cursor: pointer;
+    width: 300px;
+}
+.global-footprint{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.global-footprint-arrow{
+    font-size: 30px;    
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+.rotated{
+    transform: rotate(270deg);
+}
+
+.hidden-footer-text{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 30px;
+    display: none;
+}
+.unhide{
+    display: inline;
+}
+.hidden-footer-text:hover{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.footer-divider{
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+}
+.footer-list li{
+    transition: 0.2s ease;
+}
+.footer-list-item{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: white;
+}
+.footer-list li:hover{
+    padding-left: 15px;
+    list-style: disc;
 }
 
 @media (max-width: 850px) {
@@ -425,5 +511,15 @@ ul{
 
     .section5-img-container{
         width: 600px;
+    }
+
+    .footer{
+        padding-top: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 1100px;
+    }
+    .right-side{
+        padding-top: 20px;
     }
 }

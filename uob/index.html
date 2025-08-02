@@ -67,7 +67,7 @@
         <!--Divider using SVG element-->
         <div class="divider1">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M1200 0L0 0 892.25 74.72 1200 0z" class="shape-fill"></path>
+                <path d="M1200 0L0 0 892.25 30.72 1200 0z" class="shape-fill"></path>
             </svg>
         </div>
 
@@ -133,9 +133,28 @@
                 <a href = "index.html"><img class = "footer-logo" src = "img/UoB_negative_logo.png"></a>
                 <p class = "address">Edgbaston Birmingham, B15 2TT United Kingdom</p>
                 <p class = "tel">Tel:+44 (0)121 414 3344</p>
+                <div class = "icon-container">
+                    <div class = "icon"><img src = ""></div>
+                    <div class = "icon"><img src = ""></div>
+                    <div class = "icon"><img src = ""></div>
+                    <div class = "icon"><img src = ""></div>
+                    <div class = "icon"><img src = ""></div>
+                    <div class = "icon"><img src = ""></div>
+                    <div class = "icon"><img src = ""></div>
+                </div>
             </div>
             <div class = "right-side">
-                <h1>Global Footprint</h1>
+                <div class = "global-footprint-container"  onclick = "openCloseFooter()">
+                    <h1 class = "global-footprint">Global Footprint</h1>
+                    <p class = "global-footprint-arrow" id = "arrow">></p>
+                </div>
+                <a href = "" class = "hidden-footer-text" id = "hidden-text">Discover our global engagement</a>
+                <div class = "footer-divider"></div>
+                <ul class = "footer-list">
+                    <li><a href = "" class = "footer-list-item">Culture and collections</a></li>
+                    <li><a href = "" class = "footer-list-item">Schools, institutes and departments</a></li>
+                    <li><a href = "" class = "footer-list-item">Services and facilities</a></li>
+                </ul>
             </div>
         </section>
 
