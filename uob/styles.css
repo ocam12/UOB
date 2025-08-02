@@ -145,7 +145,6 @@ ul{
 
 .section1-text{
     max-width: 500px;
-    overflow: hidden;
 }
 
 .section1-text h1{
@@ -222,7 +221,7 @@ ul{
 
 .slide-in-element {
   opacity: 0;
-  transform: translateX(10vw); /* default, overridden for left */
+  transform: translateX(10%); /* default, overridden for left */
   transition: all 0.6s ease-out;
 }
 
@@ -496,7 +495,8 @@ ul{
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 80%;
+    line-height: 25px;
     padding: 0;
 }
 .footer-list li{
