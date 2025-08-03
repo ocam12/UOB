@@ -45,11 +45,11 @@ ul{
     color: black;
     padding: 10px;
     border-radius: 25px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 .nav-option:hover{
     border: 2px solid black;
-    background-color: rgba(255, 251, 0, 0.9);
+    background-color: rgba(255, 252, 98, 0.9);
 }
 .nav-option:active{
     background-color: rgba(255, 251, 0, 0.3);
@@ -100,6 +100,16 @@ ul{
     scale: 0.98;
 }
 
+.hamburger-menu{
+    display: none;
+    cursor: pointer;
+    color: blac;
+}
+
+.hamburger-menu svg{
+    stroke: currentColor;
+}
+
 .img-container{
     position: absolute;
     top: 0;
@@ -113,12 +123,13 @@ ul{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
 }
 
 .img-container p{
     font-family: Roboto Condensed;
     width: 70%;
-    font-size: 10vw;
+    font-size: min(10vw, 100px);
     text-align: center;
     font-weight: bolder;
     color: rgb(249, 249, 249);
@@ -342,34 +353,43 @@ ul{
 }
 
 .section4{
+    background-image: url(img/UoB_aerial_imagery_5.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
     height: 100%;
     padding: 5% 0 5% 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding-left: 5%;
 }
 
-.section4-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section4-text{
+    width: 50vw;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 10px 25px;
 }
 
-.section4-img img{
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0px 1px rgb(166, 166, 166);
+.section4-text h1{
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+}
+
+.section4-text p{
+    color: rgb(219, 219, 219);
+    font-size: 18px;
 }
 
 .explore{
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
     padding-bottom: 3px;
     transition: 0.3s ease;
 }
 .explore:hover{
-    color: #1e1e1e;
     padding-right: 30px;
 }
 
@@ -386,6 +406,7 @@ ul{
 
 .section5-img-container{
     width: 80%;
+    max-width: 900px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -443,6 +464,22 @@ ul{
     height: 60px;
     border: 1px solid white;
     border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.6s ease;
+}
+
+.icon svg{
+    stroke: currentColor;
+}
+
+.icon:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
 }
 
 .right-side{
@@ -473,6 +510,7 @@ ul{
 
 .hidden-footer-text{
     text-decoration: none;
+    font-weight: bolder;
     color: white;
     font-size: 20px;
     padding-bottom: 30px;
@@ -495,7 +533,7 @@ ul{
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    font-size: 80%;
+    font-size: 20px;
     line-height: 25px;
     padding: 0;
 }
@@ -520,8 +558,11 @@ ul{
         margin-right: 10px; /* reduce big right margin */
         gap: 10px; /* smaller gap */
     }
+    .hamburger-menu{
+        display: block;
+    }
     .logo {
-        width: 40vw; /* larger relative width to fill space */
+        width: 24vw; /* larger relative width to fill space */
         max-width: none;
         margin-left: 5px;
     }
@@ -536,10 +577,10 @@ ul{
         width: 100%;
     }
     .section1-text h1{
-        font-size: 6vw;
+        font-size: 4vw;
     }
     .section1-text p{
-        font-size: 4vw;
+        font-size: 2.5vw;
     }
 
     .section2{
@@ -569,14 +610,8 @@ ul{
     }
 
     .section4{
-        flex-direction: column;
-        text-align: center;
         height: 100%;
         padding: 10% 2% 10% 2%;
-        gap: 5px;
-    }
-    .section4-img img{
-        width: 70%;
     }
 
     .section5-img-container{
