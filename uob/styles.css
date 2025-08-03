@@ -621,12 +621,6 @@ ul{
     .section1-img{
         width: 100%;
     }
-    .section1-text h1{
-        font-size: 4vw;
-    }
-    .section1-text p{
-        font-size: 2.5vw;
-    }
 
     .section2{
         flex-direction: column;
@@ -647,6 +641,7 @@ ul{
         width: 100%;
     }
     .slide{
+        padding-top: 20px;
         flex-direction: column;
         gap: 0;
     }
@@ -659,8 +654,8 @@ ul{
         padding: 10% 2% 10% 2%;
     }
 
-    .section5-img-container{
-        width: 70%;
+    .section5{
+        padding-top: 40px;
     }
 
     .footer{
