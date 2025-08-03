@@ -11,6 +11,14 @@ window.addEventListener('scroll', function () {
     }
 });
 
+function displayMenu(){
+  const display = document.querySelector('.mobile-menu');
+  if(display.classList.contains('hamburger-pressed')){
+    display.classList.remove('hamburger-pressed');
+  }else{
+    display.classList.add('hamburger-pressed');
+  }
+}
 
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
