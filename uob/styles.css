@@ -673,3 +673,9 @@ ul{
         padding-top: 20px;
     }
 }
+
+@media (min-width: 850px){
+    .mobile-menu {
+        visibility: hidden;
+    }
+}
