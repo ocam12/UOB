@@ -471,6 +471,7 @@ ul{
 
 .footer-logo{
     width: 50%;
+    max-width: 400px;
 }
 
 .left-side{
@@ -607,9 +608,9 @@ ul{
         display: block;
     }
     .logo {
-        width: 24vw; /* larger relative width to fill space */
-        max-width: none;
+        width: 24vw;
         margin-left: 5px;
+        min-width: 120px;
     }
     .section1{
         flex-direction: column;
