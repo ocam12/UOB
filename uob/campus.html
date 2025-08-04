@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Link to external CSS-->
+        <link rel = "stylesheet" href = "styles.css">
+        <!--Roboto font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Navbar (contains logo, main menu buttons, and side content)-->
+        <nav id = "navbar" class = "navbar navbar-background">
+            <a href = "index.html"><img class = "logo" src = "img/University-of-Birmingham-Logo.png"></a>
+            <!--List of main menu options-->
+            <ul>
+                <li><a class = "nav-option" href="index.html">Home</a></li>
+                <li><a class = "nav-option"  href="">Modules</a></li>
+                <li><a class = "nav-option"  href="campus.html">Campus</a></li>
+                <li><a class = "nav-option"  href="">Society</a></li>
+            </ul>
+            <!--Side content contained seperately in its own div-->
+            <div class = "navbar-sidecontent flex-cc">
+                <a class = "profile-button flex-cc" href = ""><img src = "img/638636-200.png"></a>
+                <a class = "contact-us" href = "">Contact Us</a>
+                <!--Hidden hamburger menu unless screen size <= 850px-->
+                <div class = "hamburger-menu" onclick = "displayMenu()"><svg width="30px" height="30px" fill="none" stroke="currentColor" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" stroke-width="1" stroke-linecap="round" d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"/></svg></div>
+            </div>
+        </nav>
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <!--Same list as navbar-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Modules</a></li>
+                <li><a href="campus.html">Campus</a></li>
+                <li><a href="">Society</a></li>
+            </ul>
+        </div>
+
+        <section class = "campus-section1">
+            <div class = "campus-section1-left">
+                
+            </div>
+            <div class = "campus-section1-right flex-cc">
+                <h1>The Campus Designed For You</h1>
+                <p>Our 125-year-old campus has a rich heritage and a vibrant, modern atmosphere. Nestled in the heart of Edgbaston, just minutes from Birmingham city centre, the University of Birmingham blends historic redbrick charm with state-of-the-art facilities. Surrounded by lush greenery, stunning architecture, and a strong sense of community, our campus offers the perfect environment for learning, discovery, and student life.</p>
+            </div>
+        </section>
+        
+        <div class = "manual-spacer"></div>
+
+        <section class = "campus-section2">
+            <div class = "campus-section2-left flex-cc">
+                <img src = "img/front of buiding 400 x 600.png">
+            </div>
+            <svg class="diagonal-divider" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="0,0 100,0 0, 100" fill="#fffed8" />
+            </svg>
+            <div class = "campus-section2-right flex-cc">
+                <h1>Our Home</h1>
+                <p>The Computer Science Building at the University of Birmingham is a hub of innovation, collaboration, and cutting-edge research. Equipped with modern labs, collaborative study spaces, and specialist facilities for AI, cybersecurity, and robotics, it reflects the university’s commitment to driving technological progress.</p>
+            </div>
+        </section>
+
+        <section class = "campus-section3">
+            <p id = "temperature"></p>
+        </section>
+
+        <div class = "weather-container">
+            <h1>Weather in Birmingham</h1>
+            <p id = "description"></p>
+            <p id = "temperature"></p>
+            <p id = "humidity"></p>
+            <p id = "wind"></p>
+            <img id = "weather-icon" alt = "Weather Icon">
+        </div>
+
+        <!--Script link to external file-->
+        <script src="home.js" defer></script>
+        <script src="campus.js" defer></script>
+    </body>
+</html>
