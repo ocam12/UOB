@@ -5,12 +5,8 @@ const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=met
 fetch(url)
     .then(response => response.json())
     .then(data => {
-        const iconCode = data.weather[0].icon;
-        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-
-        document.getElementById('description').innerText = `Weather: ${data.weather[0].description}`;
-        document.getElementById('temperature').innerText = `${Math.round(data.main.temp)}`;
-        document.getElementById('weather-icon').src = iconUrl;
+        document.getElementById('description').innerText = `${data.weather[0].description.toUpperCase()}`;
+        document.getElementById('temperature').innerText = `${Math.round(data.main.temp)} °c`;
     })
     .catch(error => {
         console.error('Error fetching weather: ', error);
