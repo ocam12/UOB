@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <!--Title and icon-->
-        <title>University of Birmingham Campus</title>
+        <title>Contact Us</title>
         <link rel="icon" type="image/png" href="img/favicon-32x32.png">
     </head>
 
@@ -27,7 +27,7 @@
             <!--Side content contained seperately in its own div-->
             <div class = "navbar-sidecontent flex-cc">
                 <a class = "profile-button flex-cc" href = ""><img src = "img/638636-200.png"></a>
-                <a class = "contact-us" href = "contact-us.html">Contact Us</a>
+                <a class = "contact-us" href = "contact-us.html ">Contact Us</a>
                 <!--Hidden hamburger menu unless screen size <= 850px-->
                 <div class = "hamburger-menu" onclick = "displayMenu()"><svg width="30px" height="30px" fill="none" stroke="currentColor" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" stroke-width="1" stroke-linecap="round" d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"/></svg></div>
             </div>
@@ -43,53 +43,23 @@
             </ul>
         </div>
 
-        <!--Starting section - splits whole screen into image on left and text on right-->
-        <section class = "campus-section1">
-            <!--Left side (background image)-->
-            <div class = "campus-section1-left"></div>
-            <!--Right side (text)-->
-            <div class = "campus-section1-right flex-cc">
-                <h1>The Campus Designed For You</h1>
-                <p>Our 125-year-old campus has a rich heritage and a vibrant, modern atmosphere. Nestled in the heart of Edgbaston, just minutes from Birmingham city centre, the University of Birmingham blends historic redbrick charm with state-of-the-art facilities. Surrounded by lush greenery, stunning architecture, and a strong sense of community, our campus offers the perfect environment for learning, discovery, and student life.</p>
-            </div>
-        </section>
-        
-        <!--Physical spacer for first section-->
-        <div class = "manual-spacer"></div>
+        <!--Form section-->
+        <section class = "contact-us-section1 flex-cc">
+            <h1>Contact Us</h1>
+            <p>If you have any queries please get in touch so we can help!</p>
+            <form action="https://formsubmit.co/ocam12@btinternet.com" method="POST" class = "flex-cc">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" placeholder="Name">
 
-        <!--Section talking about computer science building-->
-        <section class = "campus-section2">
-            <div class = "campus-section2-left flex-cc">
-                <img src = "img/front of buiding 400 x 600.png">
-            </div>
-            <svg class="diagonal-divider" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon points="0,0 100,0 0, 100" fill="#fffed8" />
-            </svg>
-            <div class = "campus-section2-right">
-                <h1>Our Home</h1>
-                <p>The Computer Science Building at the University of Birmingham is a hub of innovation, collaboration, and cutting-edge research. Equipped with modern labs, collaborative study spaces, and specialist facilities for AI, cybersecurity, and robotics, it reflects the university’s commitment to driving technological progress.</p>
-            </div>
-        </section>
+                <label for="email">Your Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Email">
 
-        <!--Weather section using live data from openweathermap-->
-        <section class = "campus-section3 flex-cc">
-            <div class = "campus-section3-text-upper">
-                <p class = "campus-section3-temperature" id = "temperature"></p>
-                <p class = "campus-section3-description" id = "description"></p>
-            </div>
-            <div class = "campus-section3-text-lower">
-                <p>...in Birmingham today</p>
-            </div>
-        </section>
+                <label for="message">Your Query:</label>
+                <textarea name="message" id="message" required placeholder="Write Your Query Here..."></textarea>
 
-        <!--Map section using Google Maps iframe-->
-        <section class = "campus-section4 flex-cc">
-            <div class = "campus-section4-text">
-                <h1>Come Find Us!</h1>
-                <p>We are an open campus so please feel free to come and take a look, or - even better - come during one of our open days and get a guided tour and induction</p>
-            </div>
-            <!--Google Maps location of UOB-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2431.575238418841!2d-1.9331494237780333!3d52.4506088720431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bdcf028ccfaf%3A0x5eb315231196339a!2sUniversity%20of%20Birmingham!5e0!3m2!1sen!2suk!4v1754421129969!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button type="submit">Send</button>
+            </form>
+
         </section>
 
         <section class = "footer">

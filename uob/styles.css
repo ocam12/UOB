@@ -1,4 +1,5 @@
 @import "campus.css";
+@import "contact-us.css";
 
 .roboto-condensed-uniquifier {
   font-family: "Roboto Condensed", sans-serif;
@@ -116,11 +117,11 @@ ul{
 }
 
 .mobile-menu {
-    display: none;
     visibility: hidden;
-    position: sticky;
-    float: right;
+    position: fixed;
     top: 75px;
+    right: 0;
+    left: auto;
     width: 60vw;
     background-color: #ffffff;
     z-index: 10;
@@ -131,6 +132,7 @@ ul{
 }
 
 .hamburger-pressed{
+    display: block;
     visibility: visible;
     max-height: 500px;
     transform: translateX(0px);
@@ -605,9 +607,6 @@ ul{
     }
     .img-container p{
         font-size: min(15vw, 100px);
-    }
-    .mobile-menu{
-        display: block;
     }
 
     .section1{
